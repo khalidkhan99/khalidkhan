@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khalid Khan — Software Engineer & AI Developer | Portfolio</title>
+  <meta name="description" content="Portfolio of Khalid Khan, a Software Engineer and AI Developer specializing in machine learning, full-stack development, and intelligent systems." />
+  <meta name="theme-color" content="#090A0F" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Home">Khalid<span>Khan</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navList"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Toggle theme" type="button"><i class="fas fa-moon" aria-hidden="true"></i></button>
+    <nav id="navList" class="nav__list" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="hero" id="hero" aria-label="Hero introduction">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <div class="hero__badge reveal" aria-hidden="true"><span class="hero__badge-dot"></span> Open to work & collaborations</div>
+          <h1 class="hero__headline reveal reveal-delay-1">Khalid Khan<br /><span class="gradient-text">Software Engineer &amp; AI Developer</span></h1>
+          <div class="hero__typewrap reveal reveal-delay-2" aria-live="polite" aria-atomic="true"><span id="typed-text"></span><span class="cursor" aria-hidden="true"></span></div>
+          <div class="hero__actions reveal reveal-delay-3">
+            <a href="contact.html" class="btn btn--primary" aria-label="Get in touch with Khalid Khan"><i class="fas fa-paper-plane" aria-hidden="true"></i> Get in Touch</a>
+            <a href="projects.html" class="btn btn--secondary" aria-label="View Khalid Khan's portfolio projects"><i class="fas fa-arrow-down" aria-hidden="true"></i> View My Work</a>
+          </div>
+          <div class="hero__stats reveal reveal-delay-4" aria-label="Key statistics">
+            <div class="hero__stat"><span class="hero__stat-value" data-count="3">0</span><p class="hero__stat-label">Years Exp.</p></div>
+            <div class="hero__stat"><span class="hero__stat-value" data-count="15">0</span><p class="hero__stat-label">Projects</p></div>
+            <div class="hero__stat"><span class="hero__stat-value" data-count="10">0</span><p class="hero__stat-label">Technologies</p></div>
+          </div>
+        </div>
+        <div class="hero__visual reveal" aria-hidden="true" style="transition-delay:0.3s">
+          <div class="hero__code-window">
+            <div class="code-window__header">
+              <span class="code-window__dot code-window__dot--red"></span>
+              <span class="code-window__dot code-window__dot--yellow"></span>
+              <span class="code-window__dot code-window__dot--green"></span>
+              <span class="code-window__title">build.py — portfolio</span>
+            </div>
+            <div class="code-window__body">
+<span class="cm">#!/usr/bin/env python3</span>
+<span class="cm"># portfolio — build v2.0</span>
+
+<span class="kw">import</span> intelligence
+<span class="kw">import</span> craftsmanship
+
+<span class="kw">class</span> <span class="fn">Portfolio</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        self.vision  = <span class="str">"build systems that matter"</span>
+        self.stack   = [<span class="str">"AI"</span>, <span class="str">"Cloud"</span>, <span class="str">"Full-Stack"</span>]
+        self.mission = <span class="str">"engineer the future"</span>
+
+    <span class="kw">def</span> <span class="fn">create</span>(self):
+        <span class="kw">while</span> <span class="num">True</span>:
+            self.learn()
+            self.build()
+            self.ship()
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section__accent-bar reveal" aria-hidden="true"></div>
+      <h2 class="section__heading reveal reveal-delay-1" id="about-heading">About Me</h2>
+      <p class="section__subtitle reveal reveal-delay-2">Engineer by trade. Builder by heart. AI explorer by curiosity.</p>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>I'm <strong>Khalid Khan</strong> — a Software Engineer with a deep passion for crafting <strong>scalable, production-grade systems</strong> and exploring the frontiers of <strong>Artificial Intelligence</strong>. I thrive at the intersection of engineering excellence and intelligent systems.</p>
+          <p>Currently diving deep into <strong>machine learning</strong>, <strong>deep learning architectures</strong>, and <strong>large language models (LLMs)</strong> while shipping full-stack applications used by thousands. I believe in code that's not just functional — but <strong>elegant, maintainable, and impactful</strong>.</p>
+        </div>
+        <aside class="about__highlights reveal reveal-delay-1" aria-label="Personal highlights">
+          <article class="about__highlight-card"><div class="about__highlight-icon" aria-hidden="true">💻</div><div class="about__highlight-number">50+</div><div class="about__highlight-label">Repos Built</div></article>
+          <article class="about__highlight-card"><div class="about__highlight-icon" aria-hidden="true">🧠</div><div class="about__highlight-number">8+</div><div class="about__highlight-label">AI Projects</div></article>
+          <article class="about__highlight-card"><div class="about__highlight-icon" aria-hidden="true">📚</div><div class="about__highlight-number">∞</div><div class="about__highlight-label">Always Learning</div></article>
+          <article class="about__highlight-card"><div class="about__highlight-icon" aria-hidden="true">🌍</div><div class="about__highlight-number">10+</div><div class="about__highlight-label">Countries Reached</div></article>
+        </aside>
+      </div>
+      <div style="margin-top: var(--space-lg);"><a href="about.html" class="btn btn--outline"><i class="fas fa-user" aria-hidden="true"></i> Full About Me &rarr;</a></div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section__accent-bar reveal" aria-hidden="true"></div>
+      <h2 class="section__heading reveal reveal-delay-1" id="skills-heading">Skills &amp; Technologies</h2>
+      <p class="section__subtitle reveal reveal-delay-2">Core competencies and tools I work with daily.</p>
+      <div class="skills__grid">
+        <article class="skill-category reveal" aria-label="Languages and core technologies">
+          <h3 class="skill-category__title"><i class="fas fa-code" aria-hidden="true"></i> Languages &amp; Core</h3>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">Python</span><span class="skill-item__level">95%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="95"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">TypeScript / JavaScript</span><span class="skill-item__level">90%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="90"></div></div></div>
+        </article>
+        <article class="skill-category reveal reveal-delay-1" aria-label="AI and machine learning">
+          <h3 class="skill-category__title"><i class="fas fa-brain" aria-hidden="true"></i> AI &amp; Machine Learning</h3>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">PyTorch / TensorFlow</span><span class="skill-item__level">88%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="88"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">LLMs / LangChain</span><span class="skill-item__level">84%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="84"></div></div></div>
+        </article>
+      </div>
+      <div style="margin-top: var(--space-xl);"><a href="skills.html" class="btn btn--outline"><i class="fas fa-cogs" aria-hidden="true"></i> Full Skills &rarr;</a></div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section__accent-bar reveal" aria-hidden="true"></div>
+      <h2 class="section__heading reveal reveal-delay-1" id="projects-heading">Featured Projects</h2>
+      <p class="section__subtitle reveal reveal-delay-2">Production systems, AI experiments, and open-source work.</p>
+      <div class="projects__grid">
+        <article class="project-card reveal" aria-label="AI Code Assistant project">
+          <div class="project-card__icon" aria-hidden="true">🤖</div>
+          <div class="project-card__tags"><span class="project-card__tag">Python</span><span class="project-card__tag">LangChain</span><span class="project-card__tag">OpenAI</span><span class="project-card__tag">FastAPI</span></div>
+          <h3 class="project-card__title">AI Code Assistant</h3>
+          <p class="project-card__description">Intelligent code completion and refactoring tool powered by fine-tuned LLMs. Supports 10+ languages with context-aware suggestions.</p>
+          <div class="project-card__metric" aria-label="Key metric"><i class="fas fa-bolt" aria-hidden="true"></i> Reduced review time by 40%</div>
+          <div class="project-card__links"><a href="#" aria-label="View source code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Source</a><a href="#" aria-label="View live demo"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo</a></div>
+        </article>
+        <article class="project-card reveal reveal-delay-1" aria-label="Deep Learning Pipeline project">
+          <div class="project-card__icon" aria-hidden="true">🧠</div>
+          <div class="project-card__tags"><span class="project-card__tag">PyTorch</span><span class="project-card__tag">MLflow</span><span class="project-card__tag">Docker</span><span class="project-card__tag">AWS</span></div>
+          <h3 class="project-card__title">Deep Learning Pipeline</h3>
+          <p class="project-card__description">End-to-end pipeline for image classification with custom architectures, automated data augmentation, and full MLOps deployment on cloud infrastructure.</p>
+          <div class="project-card__metric" aria-label="Key metric"><i class="fas fa-chart-line" aria-hidden="true"></i> 94.3% accuracy on ImageNet-1K</div>
+          <div class="project-card__links"><a href="#" aria-label="View source code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Source</a><a href="#" aria-label="View live demo"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo</a></div>
+        </article>
+        <article class="project-card reveal" aria-label="AI Chatbot project">
+          <div class="project-card__icon" aria-hidden="true">💬</div>
+          <div class="project-card__tags"><span class="project-card__tag">Python</span><span class="project-card__tag">Ollama</span><span class="project-card__tag">Mistral</span><span class="project-card__tag">Rich</span></div>
+          <h3 class="project-card__title">AI Chatbot</h3>
+          <p class="project-card__description">Local terminal-based AI assistant powered by Ollama (Mistral 7B) with streaming responses, conversation history, save/load sessions, and a polished CLI interface built with Python and Rich.</p>
+          <div class="project-card__metric" aria-label="Key metric"><i class="fas fa-bolt" aria-hidden="true"></i> Streaming responses under 200ms</div>
+          <div class="project-card__links"><a href="#" aria-label="View source code on GitHub"><i class="fab fa-github" aria-hidden="true"></i> Source</a><a href="#" aria-label="View live demo"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo</a></div>
+        </article>
+      </div>
+      <div style="margin-top: var(--space-xl);"><a href="projects.html" class="btn btn--outline"><i class="fas fa-folder-open" aria-hidden="true"></i> All Projects &rarr;</a></div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience" aria-labelledby="experience-heading">
+    <div class="container">
+      <div class="section__accent-bar reveal" aria-hidden="true"></div>
+      <h2 class="section__heading reveal reveal-delay-1" id="experience-heading">Experience</h2>
+      <p class="section__subtitle reveal reveal-delay-2">A track record of shipping impact at scale.</p>
+      <div class="timeline" role="list" aria-label="Professional experience timeline">
+        <article class="timeline__item timeline__item--current reveal" role="listitem" aria-label="Current role: AI/ML Engineer at TechCorp">
+          <span class="timeline__date">2024 — Present</span>
+          <h3 class="timeline__role">AI/ML Engineer</h3>
+          <p class="timeline__company">TechCorp — Remote</p>
+          <ul class="timeline__achievements">
+            <li>Architected and deployed <strong>production LLM pipelines</strong> serving 150K+ monthly active users with 99.9% uptime.</li>
+            <li>Optimized model inference throughput by <strong>40%</strong> via quantization, pruning, and batch scheduling.</li>
+          </ul>
+        </article>
+      </div>
+      <div style="margin-top: var(--space-xl);"><a href="experience.html" class="btn btn--outline"><i class="fas fa-briefcase" aria-hidden="true"></i> Full Experience &rarr;</a></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="section__accent-bar reveal" aria-hidden="true"></div>
+      <h2 class="section__heading reveal reveal-delay-1" id="contact-heading">Get in Touch</h2>
+      <p class="section__subtitle reveal reveal-delay-2">Have a project in mind or just want to connect? Let's talk.</p>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <h3 class="contact__info-heading reveal">Let's build something extraordinary</h3>
+          <p class="contact__info-text reveal reveal-delay-1">I'm always open to discussing new opportunities, collaborations, or technical challenges. Reach out and I'll get back within 24 hours.</p>
+          <div class="contact__item reveal"><span class="contact__item-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span><a href="mailto:khalidkhan99012@gmail.com">khalidkhan99012@gmail.com</a></div>
+          <div class="contact__item reveal reveal-delay-1"><span class="contact__item-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span><span>Pakistan</span></div>
+          <div class="contact__item reveal reveal-delay-2"><span class="contact__item-icon" aria-hidden="true"><i class="fab fa-github"></i></span><a href="https://github.com/khalidkhan" target="_blank" rel="noopener noreferrer">github.com/khalidkhan</a></div>
+          <div class="contact__item reveal reveal-delay-3"><span class="contact__item-icon" aria-hidden="true"><i class="fab fa-linkedin"></i></span><a href="https://linkedin.com/in/khalidkhan" target="_blank" rel="noopener noreferrer">linkedin.com/in/khalidkhan</a></div>
+        </div>
+        <form class="contact__form reveal" id="contactFormHome" action="https://formsubmit.co/khalidkhan99012@gmail.com" method="POST" novalidate aria-label="Contact form">
+          <input type="hidden" name="_subject" value="New Portfolio Message from Khalid Khan" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="_next" value="contact.html" />
+          <div class="contact__form-row">
+            <label for="formNameHome" class="sr-only">Your name</label>
+            <input type="text" id="formNameHome" name="name" placeholder="Your Name" required aria-required="true" />
+            <label for="formEmailHome" class="sr-only">Your email address</label>
+            <input type="email" id="formEmailHome" name="email" placeholder="Your Email" required aria-required="true" />
+          </div>
+          <label for="formSubjectHome" class="sr-only">Subject</label>
+          <input type="text" id="formSubjectHome" name="subject" placeholder="Subject" />
+          <label for="formMessageHome" class="sr-only">Your message</label>
+          <textarea id="formMessageHome" name="message" placeholder="Your Message" required aria-required="true"></textarea>
+          <button type="submit" class="btn btn--primary" aria-label="Send your message">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="social-links reveal">
+      <a href="https://github.com/khalidkhan" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="https://linkedin.com/in/khalidkhan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/khalidkhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <a href="mailto:khalidkhan99012@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <p class="site-footer__copy reveal reveal-delay-1">&copy; 2026 Khalid Khan. Crafted with purpose.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

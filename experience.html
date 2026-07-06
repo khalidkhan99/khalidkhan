@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Khalid Khan | Portfolio</title>
+  <meta name="description" content="Professional experience of Khalid Khan — Software Engineer and AI Developer" />
+  <meta name="theme-color" content="#090A0F" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Home">Khalid<span>Khan</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navList"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Toggle theme" type="button"><i class="fas fa-moon" aria-hidden="true"></i></button>
+    <nav id="navList" class="nav__list" role="navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-header" aria-label="Page title">
+    <div class="container">
+      <div class="section__accent-bar reveal" aria-hidden="true"></div>
+      <h1 class="section__heading reveal reveal-delay-1">Experience</h1>
+      <p class="section__subtitle reveal reveal-delay-2">A track record of shipping impact at scale.</p>
+    </div>
+  </section>
+
+  <section class="experience" aria-labelledby="experience-full">
+    <div class="container">
+      <div class="timeline" role="list" aria-label="Professional experience timeline">
+        <article class="timeline__item timeline__item--current reveal" role="listitem" aria-label="Current role: AI/ML Engineer at TechCorp">
+          <span class="timeline__date">2024 — Present</span>
+          <h3 class="timeline__role">AI/ML Engineer</h3>
+          <p class="timeline__company">TechCorp — Remote</p>
+          <ul class="timeline__achievements">
+            <li>Architected and deployed <strong>production LLM pipelines</strong> serving 150K+ monthly active users with 99.9% uptime and sub-200ms response times.</li>
+            <li>Optimized model inference throughput by <strong>40%</strong> via quantization, pruning, and batch scheduling, reducing infrastructure costs by $18K/mo.</li>
+            <li>Led a team of 4 engineers building an <strong>internal RAG platform</strong> that cut knowledge retrieval time by 65% across the organization.</li>
+            <li>Designed and implemented <strong>A/B testing framework</strong> for model evaluation, enabling data-driven decisions on model deployments.</li>
+          </ul>
+        </article>
+        <article class="timeline__item reveal reveal-delay-1" role="listitem" aria-label="Previous role: Software Engineer at StartupXYZ">
+          <span class="timeline__date">2022 — 2024</span>
+          <h3 class="timeline__role">Software Engineer</h3>
+          <p class="timeline__company">StartupXYZ — San Francisco, CA</p>
+          <ul class="timeline__achievements">
+            <li>Architected <strong>microservices handling 10M+ daily requests</strong>, reducing p95 latency by 55% through async processing and connection pooling.</li>
+            <li>Designed and implemented <strong>RESTful APIs</strong> and event-driven workers on AWS (ECS, SQS, Lambda), achieving 99.99% availability SLA.</li>
+            <li>Established CI/CD pipelines with <strong>GitHub Actions + Terraform</strong>, reducing deployment time from 45 minutes to under 4 minutes.</li>
+            <li>Mentored 3 junior engineers through structured code reviews, pair programming, and technical documentation standards.</li>
+          </ul>
+        </article>
+        <article class="timeline__item reveal reveal-delay-2" role="listitem" aria-label="Previous role: Junior Developer at WebAgency">
+          <span class="timeline__date">2021 — 2022</span>
+          <h3 class="timeline__role">Junior Developer</h3>
+          <p class="timeline__company">WebAgency — New York, NY</p>
+          <ul class="timeline__achievements">
+            <li>Built and shipped <strong>12+ responsive web applications</strong> for enterprise clients using React, Node.js, and PostgreSQL.</li>
+            <li>Introduced automated testing (Jest + Cypress), increasing code coverage from <strong>20% to 87%</strong> and reducing regression bugs by 70%.</li>
+            <li>Optimized Core Web Vitals across client projects, achieving <strong>Lighthouse scores of 95+</strong> on both desktop and mobile.</li>
+            <li>Developed a reusable <strong>component library</strong> adopted by 3 teams, reducing UI development time by 30%.</li>
+          </ul>
+        </article>
+        <article class="timeline__item reveal reveal-delay-3" role="listitem" aria-label="Internship: Software Engineering Intern at DevStudio">
+          <span class="timeline__date">2020 — 2021</span>
+          <h3 class="timeline__role">Software Engineering Intern</h3>
+          <p class="timeline__company">DevStudio — Los Angeles, CA</p>
+          <ul class="timeline__achievements">
+            <li>Developed internal tooling for <strong>automated data migration</strong> between legacy and modern databases, handling 2M+ records.</li>
+            <li>Contributed to the <strong>open-source SDK</strong> used by 500+ developers, fixing 15+ issues and adding 3 new features.</li>
+            <li>Wrote comprehensive <strong>technical documentation</strong> and API references that became the team's primary onboarding resource.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="social-links reveal">
+      <a href="https://github.com/khalidkhan" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="https://linkedin.com/in/khalidkhan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/khalidkhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <a href="mailto:khalidkhan99012@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <p class="site-footer__copy reveal reveal-delay-1">&copy; 2026 Khalid Khan. Crafted with purpose.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
