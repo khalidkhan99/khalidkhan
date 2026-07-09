@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Khalid Khan | Portfolio</title>
+  <meta name="description" content="Projects by Khalid Khan — Software Engineer and AI Developer" />
+  <meta name="theme-color" content="#090A0F" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Home">Khalid<span>Khan</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navList"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Toggle theme" type="button"><i class="fas fa-moon" aria-hidden="true"></i></button>
+    <nav id="navList" class="nav__list" role="navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-header" aria-label="Page title">
+    <div class="container">
+      <div class="section__accent-bar reveal" aria-hidden="true"></div>
+      <h1 class="section__heading reveal reveal-delay-1">Projects</h1>
+      <p class="section__subtitle reveal reveal-delay-2">Real AI tools built and deployed — try them live.</p>
+    </div>
+  </section>
+
+  <section class="projects" aria-label="All projects">
+    <div class="container">
+      <div class="projects__grid">
+
+        <!-- PROJECT 1: AI Chatbot — LIVE -->
+        <article class="project-card reveal" style="border-color:rgba(0,242,254,0.3);position:relative;">
+          <div style="position:absolute;top:14px;right:14px;background:rgba(0,242,254,0.1);border:1px solid rgba(0,242,254,0.3);color:#00f2fe;font-size:10px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:.05em;">✦ LIVE</div>
+          <div class="project-card__icon">💬</div>
+          <div class="project-card__tags">
+            <span class="project-card__tag">Python</span>
+            <span class="project-card__tag">Streamlit</span>
+            <span class="project-card__tag">Groq API</span>
+            <span class="project-card__tag">LLaMA 3.3</span>
+          </div>
+          <h3 class="project-card__title">AI Chatbot</h3>
+          <p class="project-card__description">A fully functional AI chatbot powered by Groq's LLaMA 3.3 70B model. Ask anything and get instant, intelligent responses. Built with Python and Streamlit, deployed live for anyone to use — completely free, no login required.</p>
+          <div class="project-card__metric"><i class="fas fa-bolt"></i> Ultra-fast · Free · No login needed</div>
+          <div class="project-card__links">
+            <a href="https://github.com/khalidkhan99" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source</a>
+            <a href="https://khalid-chatbot.streamlit.app" target="_blank" rel="noopener noreferrer" style="color:#00f2fe;"><i class="fas fa-external-link-alt"></i> Try Live →</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Portfolio — LIVE -->
+        <article class="project-card reveal reveal-delay-1" style="border-color:rgba(127,0,255,0.3);position:relative;">
+          <div style="position:absolute;top:14px;right:14px;background:rgba(127,0,255,0.1);border:1px solid rgba(127,0,255,0.3);color:#c084fc;font-size:10px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:.05em;">✦ LIVE</div>
+          <div class="project-card__icon">🌐</div>
+          <div class="project-card__tags">
+            <span class="project-card__tag">HTML</span>
+            <span class="project-card__tag">CSS</span>
+            <span class="project-card__tag">JavaScript</span>
+            <span class="project-card__tag">GitHub Pages</span>
+          </div>
+          <h3 class="project-card__title">Developer Portfolio</h3>
+          <p class="project-card__description">A fully responsive, dark-themed developer portfolio featuring particle canvas animations, scroll-triggered reveals, light/dark mode toggle, typed text effect, and a working contact form. Built from scratch with vanilla HTML, CSS, and JavaScript — zero frameworks, zero dependencies.</p>
+          <div class="project-card__metric"><i class="fas fa-rocket"></i> 100% custom · GitHub Pages · Mobile responsive</div>
+          <div class="project-card__links">
+            <a href="https://github.com/khalidkhan99/khalidkhan" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source</a>
+            <a href="https://khalidkhan99.github.io/khalidkhan/index.html" target="_blank" rel="noopener noreferrer" style="color:#c084fc;"><i class="fas fa-external-link-alt"></i> View Live →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Coming soon note -->
+      <div style="margin-top:var(--space-3xl);padding:var(--space-xl);background:var(--bg-card);border:1px dashed rgba(0,242,254,0.15);border-radius:var(--radius-lg);text-align:center;" class="reveal">
+        <div style="font-size:2rem;margin-bottom:var(--space-md);">🚀</div>
+        <h3 style="font-size:1.1rem;font-weight:700;color:var(--text-heading);margin-bottom:var(--space-sm);">More Projects Coming Soon</h3>
+        <p style="font-size:0.9rem;color:var(--text-dim);max-width:480px;margin:0 auto;">Currently building AI-powered tools — PDF Chat App, Email Automation, and more. Follow on GitHub for updates.</p>
+        <a href="https://github.com/khalidkhan99" target="_blank" rel="noopener noreferrer" class="btn btn--outline" style="margin-top:var(--space-lg);display:inline-flex;">
+          <i class="fab fa-github"></i> Follow on GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="social-links reveal">
+      <a href="https://github.com/khalidkhan99" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/khalidkhan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/khalidkhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:khalidkhan99012@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="site-footer__copy reveal reveal-delay-1">&copy; 2026 Khalid Khan. Crafted with purpose.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
