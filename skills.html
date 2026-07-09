@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills — Khalid Khan | Portfolio</title>
+  <meta name="description" content="Skills and technologies of Khalid Khan — Software Engineer and AI Developer" />
+  <meta name="theme-color" content="#090A0F" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Home">Khalid<span>Khan</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navList"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Toggle theme" type="button"><i class="fas fa-moon" aria-hidden="true"></i></button>
+    <nav id="navList" class="nav__list" role="navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-header" aria-label="Page title">
+    <div class="container">
+      <div class="section__accent-bar reveal" aria-hidden="true"></div>
+      <h1 class="section__heading reveal reveal-delay-1">Skills &amp; Technologies</h1>
+      <p class="section__subtitle reveal reveal-delay-2">Core competencies and tools I work with daily.</p>
+    </div>
+  </section>
+
+  <section class="skills" aria-labelledby="skills-full">
+    <div class="container">
+      <div class="skills__grid">
+        <article class="skill-category reveal" aria-label="Languages and core technologies">
+          <h3 class="skill-category__title"><i class="fas fa-code" aria-hidden="true"></i> Languages &amp; Core</h3>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">Python</span><span class="skill-item__level">95%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="95"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">TypeScript / JavaScript</span><span class="skill-item__level">92%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="92"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">Java</span><span class="skill-item__level">82%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="82"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">C / C++</span><span class="skill-item__level">72%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="72"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">SQL</span><span class="skill-item__level">85%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="85"></div></div></div>
+        </article>
+        <article class="skill-category reveal reveal-delay-1" aria-label="AI and machine learning">
+          <h3 class="skill-category__title"><i class="fas fa-brain" aria-hidden="true"></i> AI &amp; Machine Learning</h3>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">PyTorch / TensorFlow</span><span class="skill-item__level">88%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="88"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">LLMs / LangChain</span><span class="skill-item__level">84%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="84"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">Computer Vision</span><span class="skill-item__level">78%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="78"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">NLP / Transformers</span><span class="skill-item__level">74%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="74"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">RAG / Vector DBs</span><span class="skill-item__level">80%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="80"></div></div></div>
+        </article>
+        <article class="skill-category reveal" aria-label="DevOps and cloud infrastructure">
+          <h3 class="skill-category__title"><i class="fas fa-cloud" aria-hidden="true"></i> DevOps &amp; Cloud</h3>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">Docker / Kubernetes</span><span class="skill-item__level">88%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="88"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">AWS / GCP</span><span class="skill-item__level">84%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="84"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">CI/CD (GitHub Actions)</span><span class="skill-item__level">86%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="86"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">Linux / Bash</span><span class="skill-item__level">92%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="92"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">Terraform / Pulumi</span><span class="skill-item__level">78%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="78"></div></div></div>
+        </article>
+        <article class="skill-category reveal reveal-delay-1" aria-label="Frameworks and development tools">
+          <h3 class="skill-category__title"><i class="fas fa-layer-group" aria-hidden="true"></i> Frameworks &amp; Tools</h3>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">React / Next.js</span><span class="skill-item__level">92%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="92"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">Node.js / Express</span><span class="skill-item__level">88%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="88"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">FastAPI / Django</span><span class="skill-item__level">84%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="84"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">PostgreSQL / MongoDB</span><span class="skill-item__level">82%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="82"></div></div></div>
+          <div class="skill-item"><div class="skill-item__header"><span class="skill-item__name">Redis / Kafka</span><span class="skill-item__level">80%</span></div><div class="skill-item__bar"><div class="skill-item__fill" data-width="80"></div></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="social-links reveal">
+      <a href="https://github.com/khalidkhan99" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="https://linkedin.com/in/khalidkhan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/khalidkhan" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+      <a href="mailto:khalidkhan99012@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <p class="site-footer__copy reveal reveal-delay-1">&copy; 2026 Khalid Khan. Crafted with purpose.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
